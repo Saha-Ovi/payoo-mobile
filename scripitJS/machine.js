@@ -32,13 +32,16 @@ function showOnly(id)
 {
     // 1.select Element
     const addMoney=document.getElementById("add-money");
-    console.log(addMoney)
+    // console.log(addMoney);
     const cashOut=document.getElementById("cashout");
-    console.log(cashOut);
+    // console.log(cashOut);
+
+    const transaction=document.getElementById("transactions-history");
 
     //2. hide all
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
+    transaction.classList.add("hidden");
 
     // 3. specific id element show
     const elementShow=document.getElementById(id);

@@ -32,6 +32,21 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
     alert("Payment Successful");
     // balanceElement.innerText=currentBalance;
     setBalance(currentBalance);
+
+    // transaction history
+    // 1.get the transaction parent
+    const history = document.getElementById("transactions-history-container");
+    // 2. create new element
+    const newElement = document.createElement("div");
+    // 3. element inner html set
+    newElement.innerHTML = `
+    <div class="bg-base-100 p-4" id="transaction-card">
+            cashout money ${cashoutAmount} Taka to ${cashoutNumber} at ${new Date()} 
+          </div>
+          `;
+
+    // 4.append element
+    history.append(newElement);
   } else {
     alert("Invalid PIN");
     return;

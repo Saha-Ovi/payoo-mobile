@@ -62,6 +62,7 @@
       </section>
     </header>
     <main>
+      <!-- Button List -->
       <section class="w-11/12 mx-auto py-4">
         <div class="space-y-6">
           <h2 class="font-bold text-2xl">
@@ -74,13 +75,15 @@
         </div>
 
         <div class="grid grid-cols-3 gap-3 py-4">
-          <button onclick="showOnly('add-money')"
+          <button
+            onclick="showOnly('add-money')"
             class="btn btn-primary btn-soft flex-col h-full p-3 rounded-lg"
           >
             <img src="./assets/opt-1.png" alt="" />
             <p>Add Money</p>
           </button>
-          <button  onclick="showOnly('cashout')"
+          <button
+            onclick="showOnly('cashout')"
             class="btn btn-primary btn-soft flex-col h-full p-3 rounded-lg"
           >
             <img src="./assets/opt-2.png" alt="" />
@@ -104,7 +107,7 @@
             <img src="./assets/opt-5.png" alt="" />
             <p>Pay Bill</p>
           </button>
-          <button
+          <button onclick="showOnly('transactions-history')"
             class="btn btn-primary btn-soft flex-col h-full p-3 rounded-lg"
           >
             <img src="./assets/opt-6.png" alt="" />
@@ -113,22 +116,30 @@
         </div>
       </section>
 
-      <section  id="add-money" class="w-11/12 mx-auto py-4">
+      <!-- Add money section -->
+      <section id="add-money" class="w-11/12 mx-auto py-4">
         <h2 class="font-semibold text-neutral/90 text-xl">Add Money</h2>
         <div class="form pt-10">
           <div class="card bg-base-100 w-full shadow rounded-2xl">
             <div class="card-body">
               <fieldset class="fieldset">
-                <label class="label text-neutral font-bold">Select A Bank</label>
-                <select id="add-money-bank" class="select w-full rounded-full bg-base-200">
+                <label class="label text-neutral font-bold"
+                  >Select A Bank</label
+                >
+                <select
+                  id="add-money-bank"
+                  class="select w-full rounded-full bg-base-200"
+                >
                   <option disabled selected>Select back</option>
                   <option value="DBBL">DBBL</option>
                   <option value="City">City Bank</option>
                   <option value="UCB">UCB</option>
                 </select>
-                <br>
+                <br />
 
-                <label class="label text-neutral font-bold">Bank Account Number</label>
+                <label class="label text-neutral font-bold"
+                  >Bank Account Number</label
+                >
                 <input
                   id="add-money-number"
                   maxlength="11"
@@ -138,7 +149,9 @@
                   placeholder="Enter 11 digit account number"
                 />
                 <br />
-                <label class="label text-neutral font-bold">Amount to Add</label>
+                <label class="label text-neutral font-bold"
+                  >Amount to Add</label
+                >
                 <input
                   id="add-money-amount"
                   type="number"
@@ -168,6 +181,7 @@
         </div>
       </section>
 
+      <!-- cash out section -->
       <section id="cashout" class="w-11/12 mx-auto py-4">
         <h2 class="font-semibold text-neutral/90 text-xl">Cashout</h2>
         <div class="form pt-10">
@@ -211,6 +225,14 @@
               </fieldset>
             </div>
           </div>
+        </div>
+      </section>
+
+      <!-- Transaction History -->
+      <section class="w-11/12 mx-auto py-4" id="transactions-history">
+        <h2 class="font-semibold text-neutral/90 text-xl">Transactions</h2>
+        <div class="py-4" id="transactions-history-container">
+          
         </div>
       </section>
     </main>
