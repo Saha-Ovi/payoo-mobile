@@ -36,11 +36,14 @@ function showOnly(id)
     const cashOut=document.getElementById("cashout");
     // console.log(cashOut);
 
+    const transferMoney=document.getElementById("transfer-money");
+
     const transaction=document.getElementById("transactions-history");
 
     //2. hide all
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
+    transferMoney.classList.add("hidden");
     transaction.classList.add("hidden");
 
     // 3. specific id element show
