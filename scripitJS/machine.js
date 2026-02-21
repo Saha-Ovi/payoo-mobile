@@ -1,7 +1,6 @@
 // console.log("Hey!")
 
 // get input value using id
-
 function getInputValue(id)
 {
     const input=document.getElementById(id);
@@ -15,7 +14,7 @@ function getBalance()
 {
     const balanceElement=document.getElementById("balance");
     const balance=balanceElement.innerText;
-    console.log(Number(balance));
+    // console.log(Number(balance));
     return Number(balance);
 }
 
@@ -37,13 +36,16 @@ function showOnly(id)
     // console.log(cashOut);
 
     const transferMoney=document.getElementById("transfer-money");
+    const getBonus=document.getElementById("bonus-money");
 
     const transaction=document.getElementById("transactions-history");
+
 
     //2. hide all
     addMoney.classList.add("hidden");
     cashOut.classList.add("hidden");
     transferMoney.classList.add("hidden");
+    getBonus.classList.add("hidden");
     transaction.classList.add("hidden");
 
     // 3. specific id element show
