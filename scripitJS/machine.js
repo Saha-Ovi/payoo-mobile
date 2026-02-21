@@ -37,7 +37,7 @@ function showOnly(id)
 
     const transferMoney=document.getElementById("transfer-money");
     const getBonus=document.getElementById("bonus-money");
-
+    const payBill=document.getElementById("pay-bill-money");
     const transaction=document.getElementById("transactions-history");
 
 
@@ -46,6 +46,7 @@ function showOnly(id)
     cashOut.classList.add("hidden");
     transferMoney.classList.add("hidden");
     getBonus.classList.add("hidden");
+    payBill.classList.add("pay-bill-money");
     transaction.classList.add("hidden");
 
     // 3. specific id element show
